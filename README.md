@@ -9,7 +9,6 @@
    sudo pip install jupyter
    sudo pip install matplotlib
    ```
-
 3. 	export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 
 4. 	Go to root directory,  get https://github.com/tensorflow/models/tree/master/research/object_detection  as object_detection
@@ -29,6 +28,7 @@
 	mkdir model_frozen_sim; 
 	mkdir model_frozen_real; 
 	```
+	
 10. 	python object_detection/train.py --pipeline_config_path=data/config/faster_rcnn_resnet101_udacitycapstonejunior.config --train_dir=data/sim_training_data/sim_data_capture
 
 11. python object_detection/export_inference_graph.py --pipeline_config_path=config/faster_rcnn-traffic-udacity_sim.config --trained_checkpoint_prefix=data/sim_training_data/sim_data_capture/model.ckpt-5000 --output_directory=model_frozen_sim/ --input_type image_tensor
