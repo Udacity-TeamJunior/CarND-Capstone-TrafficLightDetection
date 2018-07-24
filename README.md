@@ -2,11 +2,11 @@
 
 1. conda create -n tensorflow1.8 python=3.5 && conda install tensorflow-gpu=1.8.0
 
-2. sudo apt-get install protobuf-compiler
+2. `sudo apt-get install protobuf-compiler
    sudo pip install pillow
    sudo pip install lxml
    sudo pip install jupyter
-   sudo pip install matplotlib
+   sudo pip install matplotlib`
 
 3. 	export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 
