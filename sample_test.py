@@ -15,7 +15,7 @@ from PIL import Image
 sys.path.append("..")
 from object_detection.utils import ops as utils_ops
 
-if tf.__version__ < '1.4.0':
+if tf.__version__ < '1.3.0':
   raise ImportError('Please upgrade your tensorflow installation to v1.4.* or later!')
 
 from object_detection.utils import label_map_util
@@ -102,9 +102,10 @@ for image_path in TEST_IMAGE_PATHS:
   # the array based representation of the image will be used later in order to prepare the
   # result image with boxes and labels on it.
   image_np = load_image_into_numpy_array(image)
+  #image_np = image
   # Expand dimensions since the model expects images to have shape: [1, None, None, 3]
-  #image_np_expanded = np.expand_dims(image_np, axis=0)
-  image_np_expanded = np.expand_dims(np.asarray(image_np, dtype=np.uint8), 0) 
+  image_np_expanded = np.expand_dims(image_np, axis=0)
+  #image_np_expanded = np.expand_dims(np.asarray(image_np, dtype=np.uint8), 0) 
   # Actual detection.
   output_dict = run_inference_for_single_image(image_np, detection_graph)
   print(output_dict)
