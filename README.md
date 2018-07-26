@@ -31,11 +31,13 @@
 10.
 train:
 python object_detection/train.py --pipeline_config_path=data/config/ssd_mobilenet_v1_coco_sim.config --train_dir=data/sim_training_data/ssd_model
+
 export:
 python object_detection/export_inference_graph.py --pipeline_config_path=data/config/ssd_mobilenet_v1_coco_sim.config --trained_checkpoint_prefix=data/sim_training_data/ssd_model/model.ckpt-26529 --output_directory=model_frozen_sim/ssd/  --input_type image_tensor
 
 11.
 train:
 python object_detection/train.py --pipeline_config_path=data/config/faster_rcnn_resnet101_udacitycapstonejunior.config --train_dir=data/sim_training_data/frcnn_model
+
 export:
 python object_detection/export_inference_graph.py --pipeline_config_path=data/config/faster_rcnn_resnet101_udacitycapstonejunior.config --trained_checkpoint_prefix=data/sim_training_data/frcnn_model/model.ckpt-4379 --output_directory=model_frozen_sim/frcnn/ --input_type image_tensor
