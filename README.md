@@ -1,6 +1,6 @@
 # CarND-Capstone-TrafficLightDetection
 
-1. conda create -n tensorflow1.8 python=3.5 && conda install tensorflow-gpu=1.8.0
+1. pip install tensorflow-gpu=1.4.0
 
 2. ```
    sudo apt-get install protobuf-compiler
