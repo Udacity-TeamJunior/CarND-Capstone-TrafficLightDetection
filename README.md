@@ -1,7 +1,5 @@
 #  Traffic Light Detection Project
 
-## Model preparing step.
-
 ### Environment preparing
 1. pip install tensorflow-gpu=1.4.0
 
