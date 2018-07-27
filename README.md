@@ -18,7 +18,7 @@
 ### Training datasets preparing
 
 1. 	Get [labeled imgs datasets](https://drive.google.com/file/d/0B-Eiyn-CUQtxdUZWMkFfQzdObUE/view?usp=sharing) from [Vatsal Srivastava](https://github.com/coldKnight/CarND-Capstone) and unzip to `data/real_training_data`, `data/sim_training_data`.
-2. 	Get [pretrained faster rcnn resnet101 mode based on coco](http://storage.googleapis.com/download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_11_06_2017.tar.gz) and unzip to data/
+2. 	Get [pretrained faster rcnn resnet101 model](http://storage.googleapis.com/download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_11_06_2017.tar.gz) [pretrained ssd v1 model](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz)and unzip to data/
 
 3. 	The training config file is `data/config/faster_rcnn_resnet101_udacitycapstonejunior.config`
 
